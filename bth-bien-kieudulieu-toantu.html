@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+    <p><strong>Bài 1: Tính điểm trung bình</strong></p>
+    <script>
+        let physics = +prompt('Nhập điểm Vật lý')
+        let chemistry = +prompt('Nhập điểm Hóa học')
+        let biology = +prompt('Nhập điểm Sinh học')
+        let average_score = (physics + chemistry + biology)/3
+        let total_score = (physics + chemistry + biology)
+        document.write('Điểm trung bình = '+ average_score + '<br>')
+        document.write('Tổng điểm =' + total_score);
+    </script>
+
+    <p><strong>Bài 2: Chuyển độ C sang độ F</strong></p>
+    <script>
+        let do_c = +prompt('Nhập nhiệt độ Celsius')
+        let do_f = do_c/5*9+32
+        document.write('Nhiệt độ 0F (Fahrenheit) tương ứng là:' + do_f);
+    </script>
+
+    <p><strong>Bài 3: Tính diện tích hình tròn</strong></p>
+    <script>
+        const pi = 3.14159
+        let r = 3
+        let s = pi * r**2
+        document.write('Diện tích hình tròn là:' + s)
+    </script>
+
+    <p><strong>Bài 4: Tính chu vi hình tròn</strong></p>
+    <script>
+        const pi = 3.14159
+        let r = 3
+        let p = pi * r
+        document.write('Chu vi hình tròn là:' + p)
+    </script>
+</body>
+</html>
