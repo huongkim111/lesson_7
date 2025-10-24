@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+    <form method="post" action="">
+        <input type="number" name="firstNumber" id="firstNumber" value="" required="required" placeholder="Nhập số thứ nhất" />
+        <input type="number" name="secondNumber" id="secondNumber" value="" required="required" placeholder="Nhập số thứ hai"/><br><br>
+        <button type="button" onclick ="addition()">Addition</button>
+        <button type="button" onclick ="subtraction()">Subtraction</button>
+        <button type="button" onclick ="multiplication()">Multiplication</button>
+        <button type="button" onclick ="division()">Division</button>
+        <h3 id = "result"></h3>
+    </form>
+    <script>
+        function addition(){
+            let firstNumber = document.getElementById("firstNumber").value;
+            let secondNumber = document.getElementById("secondNumber").value;
+            let result;
+            result = parseInt(firstNumber) + parseInt(secondNumber);
+            document.getElementById("result").innerHTML = `Kết quả: ` + result;
+        }
+        function subtraction(){
+            let firstNumber = document.getElementById("firstNumber").value;
+            let secondNumber = document.getElementById("secondNumber").value;
+            let result;
+            result = parseInt(firstNumber) - parseInt(secondNumber);
+            document.getElementById("result").innerHTML = `Kết quả: ` + result;
+        }
+        function multiplication(){
+            let firstNumber = document.getElementById("firstNumber").value;
+            let secondNumber = document.getElementById("secondNumber").value;
+            let result;
+            result = parseInt(firstNumber) * parseInt(secondNumber);
+            document.getElementById("result").innerHTML = `Kết quả: ` + result;
+        }
+        function division(){
+            let firstNumber = document.getElementById("firstNumber").value;
+            let secondNumber = document.getElementById("secondNumber").value;
+            let result;
+            result = parseInt(firstNumber) / parseInt(secondNumber);
+            document.getElementById("result").innerHTML = `Kết quả: ` + result;
+        }
+    </script>
+</body>
+</html>
